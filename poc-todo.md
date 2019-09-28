@@ -1,0 +1,42 @@
+## POC
+
+- Appropriate Build/Compile (dev + production)
+    - need AppStore account
+    - need google account
+- Navigation
+    - ~~Drawer navigation~~
+        - issue with gesture open/close
+    - ~~cross views navigation~~
+    - ~~Navigation stack~~
+    - menu icon, title
+- Customizations
+    - Buttons
+    - Views
+    - Navigation title/bar
+    - Input
+    - Image
+- Modals
+    - ~~Drawer modal~~
+    - ~~full page modal~~
+    - ~~alert~~
+- Animation
+    - simple fade in/out
+    - easings
+    - transforms
+- RPC Calls
+    - library
+    - main class
+    - promises/callbacks
+- Scroller
+    - Add inputs and views and be able to scroll
+    - scroll to position
+    - input goes up
+- Safe areas & Layout
+    - Be able to place things around and actually appear correctly on all devices (test with large and small)
+- List
+    - Custom cells
+    - cells with images
+    - infinite or load-more
+- Webviews
+    - Full page
+    - Work correctly with user interaction etc
