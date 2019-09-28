@@ -10,8 +10,7 @@ import Profile from './components/Profile';
 import { List } from './components/List';
 
 import { AppRegistry } from 'react-native';
-// import App from './App';
-// import { name as appName } from './app.json';
+
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,

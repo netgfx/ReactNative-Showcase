@@ -5,7 +5,6 @@
     - need google account
 - Navigation
     - ~~Drawer navigation~~
-        - issue with gesture open/close
     - ~~cross views navigation~~
     - ~~Navigation stack~~
     - menu icon, title
