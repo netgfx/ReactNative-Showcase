@@ -13,10 +13,20 @@ export default class Home extends Component {
 					<Text style={styles.welcome}>Welcome to React Native Navigation Sample!</Text>
 					<Button onPress={this._goToSecondScreen} title="Go to Second Screen" />
 					<Button onPress={this._showMoreApp} title="Open Menu" />
+					<Button onPress={this._navigateToWebview} title="Open Webview" />
+					<Button onPress={this._navigateToList} title="Navigate to List" />
 				</View>
 			</View>
 		);
 	}
+
+	_navigateToList = () => {
+		this.props.navigation.navigate('List');
+	};
+
+	_navigateToWebview = () => {
+		this.props.navigation.navigate('Webview');
+	};
 
 	_goToSecondScreen = () => {
 		console.log('go to 2nd screen');
@@ -54,7 +64,7 @@ const styles = StyleSheet.create({
 		justifyContent: 'space-evenly',
 		alignItems: 'center',
 		backgroundColor: '#F5FCFF',
-		maxHeight: 200
+		maxHeight: 280
 	},
 	welcome: {
 		fontSize: 20,

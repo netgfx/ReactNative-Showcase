@@ -33,9 +33,9 @@
 - Safe areas & Layout
     - Be able to place things around and actually appear correctly on all devices (test with large and small)
 - List
-    - Custom cells
-    - cells with images
-    - infinite or load-more
+    - ~~Custom cells~~
+    - ~~cells with images~~
+    - infinite or load-more (?)
 - Webviews
-    - Full page
+    - ~~Full page~~
     - Work correctly with user interaction etc

@@ -7,7 +7,8 @@ import { createDrawerNavigator } from 'react-navigation-drawer';
 // pages //
 import Home from './Home';
 import Profile from './components/Profile';
-import { List } from './components/List';
+import List from './components/List';
+import Webview from './components/Webview';
 
 import { AppRegistry } from 'react-native';
 
@@ -63,12 +64,36 @@ class SignInScreen extends React.Component {
 const FirstActivity_StackNavigator = createStackNavigator(
 	{
 		//All the screen from the Screen1 will be indexed here
-		First: {
+		Hone: {
 			screen: Home,
 			navigationOptions: ({ navigation }) => ({
-				title: 'Demo Screen 1',
+				title: 'Home',
 				gesturesEnabled: true,
 				headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+				headerStyle: {
+					backgroundColor: '#FF9800'
+				},
+				headerTintColor: '#fff'
+			})
+		},
+		Webview: {
+			screen: Webview,
+			navigationOptions: ({ navigation }) => ({
+				title: 'Webview #1',
+				gesturesEnabled: true,
+				//headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+				headerStyle: {
+					backgroundColor: '#FF9800'
+				},
+				headerTintColor: '#fff'
+			})
+		},
+		List: {
+			screen: List,
+			navigationOptions: ({ navigation }) => ({
+				title: 'Categories List',
+				gesturesEnabled: true,
+				//headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
 				headerStyle: {
 					backgroundColor: '#FF9800'
 				},
