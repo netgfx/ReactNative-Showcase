@@ -9,6 +9,8 @@ import Home from './Home';
 import Profile from './components/Profile';
 import List from './components/List';
 import Webview from './components/Webview';
+import Form from './components/Form';
+import StickyScroll from './components/StickyScroll';
 
 import { AppRegistry } from 'react-native';
 
@@ -33,7 +35,7 @@ class NavigationDrawerStructure extends Component {
 		return (
 			<View style={{ flexDirection: 'row' }}>
 				<TouchableOpacity onPress={this.toggleDrawer.bind(this)}>
-					<Text>Menu</Text>
+					<Text> Menu </Text>
 				</TouchableOpacity>
 			</View>
 		);
@@ -99,6 +101,30 @@ const FirstActivity_StackNavigator = createStackNavigator(
 				},
 				headerTintColor: '#fff'
 			})
+		},
+		Form: {
+			screen: Form,
+			navigationOptions: ({ navigation }) => ({
+				title: 'Input Form',
+				gesturesEnabled: true,
+				//headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+				headerStyle: {
+					backgroundColor: '#FF9800'
+				},
+				headerTintColor: '#fff'
+			})
+		},
+		StickyScroll: {
+			screen: StickyScroll,
+			navigationOptions: ({ navigation }) => ({
+				title: 'Main Area',
+				gesturesEnabled: true,
+				//headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+				headerStyle: {
+					backgroundColor: '#FF9800'
+				},
+				headerTintColor: '#fff'
+			})
 		}
 	},
 	{ headerLayoutPreset: 'center' }
@@ -149,8 +175,7 @@ class ModalScreen extends React.Component {
 	render() {
 		return (
 			<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-				<Text style={{ fontSize: 30 }}>This is a modal!</Text>
-				<Button onPress={() => this.props.navigation.goBack()} title="Dismiss" />
+				<Text style={{ fontSize: 30 }}> This is a modal! </Text> <Button onPress={() => this.props.navigation.goBack()} title="Dismiss" />
 			</View>
 		);
 	}

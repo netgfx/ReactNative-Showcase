@@ -11,14 +11,20 @@ export default class Home extends Component {
 			<View style={styles.container}>
 				<View style={styles.innerContaner}>
 					<Text style={styles.welcome}>Welcome to React Native Navigation Sample!</Text>
-					<Button onPress={this._goToSecondScreen} title="Go to Second Screen" />
-					<Button onPress={this._showMoreApp} title="Open Menu" />
-					<Button onPress={this._navigateToWebview} title="Open Webview" />
-					<Button onPress={this._navigateToList} title="Navigate to List" />
+					<Button style={styles.buttons} onPress={this._goToSecondScreen} title="Go to Second Screen" />
+					<Button style={styles.buttons} onPress={this._showMoreApp} title="Open Menu" />
+					<Button style={styles.buttons} onPress={this._navigateToWebview} title="Open Webview" />
+					<Button style={styles.buttons} onPress={this._navigateToList} title="Navigate to List" />
+					<Button style={styles.buttons} onPress={this._navigateToForm} title="Navigate to Form" />
+					<Button style={styles.buttons} onPress={this._navigateToStickyScroll} title="Navigate to Sticky" />
 				</View>
 			</View>
 		);
 	}
+
+	_navigateToForm = () => {
+		this.props.navigation.navigate('Form');
+	};
 
 	_navigateToList = () => {
 		this.props.navigation.navigate('List');
@@ -43,6 +49,11 @@ export default class Home extends Component {
 		await AsyncStorage.clear();
 		this.props.navigation.navigate('Auth');
 	};
+
+	_navigateToStickyScroll = async () => {
+		//await AsyncStorage.clear();
+		this.props.navigation.navigate('StickyScroll');
+	};
 }
 
 const styles = StyleSheet.create({
@@ -62,9 +73,10 @@ const styles = StyleSheet.create({
 	innerContaner: {
 		flex: 1,
 		justifyContent: 'space-evenly',
-		alignItems: 'center',
+		alignItems: 'stretch',
 		backgroundColor: '#F5FCFF',
-		maxHeight: 280
+		maxHeight: 400,
+		maxWidth: 200
 	},
 	welcome: {
 		fontSize: 20,
@@ -79,5 +91,9 @@ const styles = StyleSheet.create({
 	tabIcon: {
 		width: 16,
 		height: 16
+	},
+	buttons: {
+		alignSelf: 'stretch',
+		justifyContent: 'center'
 	}
 });

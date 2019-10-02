@@ -14,6 +14,8 @@
     - Navigation title/bar
     - Input
     - Image
+- Input
+    - text input
 - Modals
     - ~~Drawer modal~~
     - ~~full page modal~~
@@ -23,9 +25,9 @@
     - easings
     - transforms
 - RPC Calls
-    - library
-    - main class
-    - promises/callbacks
+    - ~~library (axios)~~
+    - ~~main class~~
+    - ~~promises/callbacks/error handling~~
 - Scroller
     - Add inputs and views and be able to scroll
     - scroll to position
