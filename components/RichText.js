@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 //import react in our code.
-import { StyleSheet, View, Text, Button, Alert } from 'react-native';
+import { StyleSheet, View, Text, Button, Alert, ScrollView, SafeAreaView } from 'react-native';
 import { createSwitchNavigator, createAppContainer, NavigationActions } from 'react-navigation';
+import HTMLView from 'react-native-htmlview';
+//
+import GLOBALS from '../Globals';
+
 // import all basic components
 
 const styles = StyleSheet.create({
@@ -26,38 +30,28 @@ const styles = StyleSheet.create({
 		backgroundColor: '#F5FCFF',
 		maxHeight: 200
 	},
-	welcome: {
-		fontSize: 20,
-		textAlign: 'center',
-		margin: 10
+	a: {
+		fontWeight: '300',
+		color: '#FF3366' // make links coloured pink
 	},
-	instructions: {
-		textAlign: 'center',
-		color: '#333333',
-		marginBottom: 5
-	},
-	tabIcon: {
-		width: 16,
-		height: 16
+	richText: {
+		flex: 1,
+		paddingRight: 20,
+		paddingLeft: 20
 	}
 });
 
 export default class Profile extends Component {
-	static navigationOptions = {
-		title: 'Profile',
-
-		headerLeft: null
-	};
 	//Screen1 Component
 	render() {
+		const htmlContent = GLOBALS.TERMS;
+
 		return (
-			<View style={styles.container}>
-				<Text style={styles.welcome}> Profile Page </Text>{' '}
-				<View style={styles.innerContaner}>
-					<Button onPress={this._showAlert} title="Show Alert" />
-					<Button onPress={this._showModal} title="Open Modal" />
-				</View>{' '}
-			</View>
+			<SafeAreaView style={styles.container} hidesWhenStopped={true}>
+				<ScrollView style={styles.richText}>
+					<HTMLView value={htmlContent} stylesheet={styles} />
+				</ScrollView>
+			</SafeAreaView>
 		);
 	}
 

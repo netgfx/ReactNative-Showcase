@@ -1,0 +1,11 @@
+export default {
+    STORE_KEY: 'a56z0fzrNpl^2',
+    BASE_URL: 'http://someurl.com',
+    COLOR: {
+        ORANGE: '#C50',
+        DARKBLUE: '#0F3274',
+        LIGHTBLUE: '#6EA8DA',
+        DARKGRAY: '#999',
+    },
+    TERMS: '<h1>Illa sunt similia: hebes acies est cuipiam oculorum, corpore alius senescit;</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="http://loripsum.net/" target="_blank">Ut id aliis narrare gestiant?</a> Quae similitudo in genere etiam humano apparet. <a href="http://loripsum.net/" target="_blank">Id enim natura desiderat.</a> Duo Reges: constructio interrete. Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus. Quis est tam dissimile homini. <a href="http://loripsum.net/" target="_blank">Disserendi artem nullam habuit.</a> Et hercule-fatendum est enim, quod sentio -mirabilis est apud illos contextus rerum. <b>Duarum enim vitarum nobis erunt instituta capienda.</b> </p><p>Polycratem Samium felicem appellabant. Quae animi affectio suum cuique tribuens atque hanc, quam dico. Ergo id est convenienter naturae vivere, a natura discedere. </p><p><mark>Huius ego nunc auctoritatem sequens idem faciam.</mark> Laboro autem non sine causa; Quid est, quod ab ea absolvi et perfici debeat? Levatio igitur vitiorum magna fit in iis, qui habent ad virtutem progressionis aliquantum. Num quid tale Democritus? Gerendus est mos, modo recte sentiat. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. </p><dl><dt><dfn>At eum nihili facit;</dfn></dt><dd>Sapiens autem semper beatus est et est aliquando in dolore;</dd><dt><dfn>Scaevolam M.</dfn></dt><dd>Quae si potest singula consolando levare, universa quo modo sustinebit?</dd><dt><dfn>Pugnant Stoici cum Peripateticis.</dfn></dt><dd>Rationis enim perfectio est virtus;</dd><dt><dfn>Istic sum, inquit.</dfn></dt><dd>Sin autem ad animum, falsum est, quod negas animi ullum esse gaudium, quod non referatur ad corpus.</dd><dt><dfn>Nos commodius agimus.</dfn></dt><dd>Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt.</dd></dl>',
+};

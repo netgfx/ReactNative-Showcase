@@ -17,10 +17,15 @@ export default class Home extends Component {
 					<Button style={styles.buttons} onPress={this._navigateToList} title="Navigate to List" />
 					<Button style={styles.buttons} onPress={this._navigateToForm} title="Navigate to Form" />
 					<Button style={styles.buttons} onPress={this._navigateToStickyScroll} title="Navigate to Sticky" />
+					<Button style={styles.buttons} onPress={this._navigateToRichText} title="Navigate to RichText" />
 				</View>
 			</View>
 		);
 	}
+
+	_navigateToRichText = () => {
+		this.props.navigation.navigate('RichText');
+	};
 
 	_navigateToForm = () => {
 		this.props.navigation.navigate('Form');

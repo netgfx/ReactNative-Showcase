@@ -39,10 +39,10 @@ export default class Form extends Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Text style={styles.welcome}>Profile Page</Text>
+				<Text style={styles.welcome}> Profile Page </Text>
 				<View style={styles.innerContaner}>
-					<TextInput style={{ height: 40, borderColor: 'gray', borderWidth: 1 }} onChangeText={(text) => _onChangeText(text)} value="" placeholder="Add some text!" />
-					<TextInput style={{ height: 40, borderColor: 'gray', borderWidth: 1 }} onChangeText={(text) => _onChangeText(text)} value="" placeholder="Add some text #2" />
+					<TextInput style={{ height: 40, borderBottomColor: 'gray', borderBottomWidth: 1 }} onChangeText={(text) => _onChangeText(text)} value="" placeholder="Add some text!" />
+					<TextInput style={{ height: 40, borderBottomColor: 'gray', borderBottomWidth: 1 }} onChangeText={(text) => _onChangeText(text)} value="" placeholder="Add some text #2" />
 				</View>
 				<View style={styles.bottomView}>
 					<Button onPress={this._showAlert} title="Submit" style={styles.bottomButton} />
