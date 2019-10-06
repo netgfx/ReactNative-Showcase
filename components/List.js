@@ -36,8 +36,6 @@ export default class List extends Component {
 			</SafeAreaView>
 		);
 	}
-
-	//({ item }) => <Item title={item.strCategory} />
 }
 
 const styles = StyleSheet.create({

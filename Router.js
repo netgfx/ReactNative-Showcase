@@ -84,7 +84,6 @@ const FirstActivity_StackNavigator = createStackNavigator(
 			navigationOptions: ({ navigation }) => ({
 				title: 'Webview #1',
 				gesturesEnabled: true,
-				//headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
 				headerStyle: {
 					backgroundColor: '#FF9800'
 				},
@@ -96,7 +95,6 @@ const FirstActivity_StackNavigator = createStackNavigator(
 			navigationOptions: ({ navigation }) => ({
 				title: 'Categories List',
 				gesturesEnabled: true,
-				//headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
 				headerStyle: {
 					backgroundColor: '#FF9800'
 				},
@@ -108,7 +106,6 @@ const FirstActivity_StackNavigator = createStackNavigator(
 			navigationOptions: ({ navigation }) => ({
 				title: 'Input Form',
 				gesturesEnabled: true,
-				//headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
 				headerStyle: {
 					backgroundColor: '#FF9800'
 				},
@@ -120,7 +117,6 @@ const FirstActivity_StackNavigator = createStackNavigator(
 			navigationOptions: ({ navigation }) => ({
 				title: 'Main Area',
 				gesturesEnabled: true,
-				//headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
 				headerStyle: {
 					backgroundColor: '#FF9800'
 				},
@@ -132,7 +128,6 @@ const FirstActivity_StackNavigator = createStackNavigator(
 			navigationOptions: ({ navigation }) => ({
 				title: 'Terms & Conditions',
 				gesturesEnabled: true,
-				//headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
 				headerStyle: {
 					backgroundColor: '#FF9800'
 				},
