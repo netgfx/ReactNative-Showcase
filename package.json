@@ -18,7 +18,7 @@
         "react": "16.9.0",
         "react-native": "0.61.2",
         "react-native-elements": "^1.2.4",
-        "react-native-fast-image": "^7.0.2",
+        "react-native-fast-image": "^8.3.0",
         "react-native-flip-card": "^3.5.5",
         "react-native-gesture-handler": "^1.4.1",
         "react-native-htmlview": "^0.15.0",
