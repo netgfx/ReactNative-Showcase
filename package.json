@@ -16,7 +16,7 @@
         "expo-constants": "^7.0.0",
         "lodash": "^4.17.21",
         "react": "16.9.0",
-        "react-native": "0.62.3",
+        "react-native": "0.70.3",
         "react-native-elements": "^1.2.4",
         "react-native-fast-image": "^8.3.0",
         "react-native-flip-card": "^3.5.5",
